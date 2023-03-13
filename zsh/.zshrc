@@ -13,6 +13,8 @@ source /usr/local/gromacs/bin/GMXRC
 
 alias grace="ssh ia253@grace.hpc.yale.edu"
 
+alias vi="nvim"
+
 ### BEGIN ATSAS Installer ###
 export ATSAS=/Users/iremaltan/ATSAS-3.0.4-2
 export PATH=$PATH:$ATSAS/bin
@@ -32,4 +34,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+export LD_LIBRARY_PATH="/Library/Developer/CommandLineTools/usr/lib/:$LD_LIBRARY_PATH"
 

@@ -11,12 +11,13 @@ Plug 'neomake/neomake'
 Plug 'machakann/vim-highlightedyank'
 Plug 'navarasu/onedark.nvim'
 Plug 'xiyaowong/nvim-transparent'
+Plug 'deoplete-plugins/deoplete-clang'
 
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
-let g:airline_theme='wombat'
-let g:neomake_python_enabled_makers = ['pylint']
+let g:airline_theme='onedark'
+"let g:neomake_python_enabled_makers = ['pylint']
 
 " to automatically enable syntax checking with neomake
 call neomake#configure#automake('nrwi', 500)
@@ -54,3 +55,18 @@ colorscheme onedark
 
 let g:transparent_enabled = v:true
 "----------------------------------------------
+
+let g:ale_linters = {
+    \ 'python': ['pylint'],
+    \ 'vim': ['vint'],
+    \ 'cpp': ['clang'],
+    \ 'c': ['clang']
+\}
+
+" custom setting for clangformat
+let g:neoformat_cpp_clangformat = {
+    \ 'exe': 'clang-format',
+    \ 'args': ['--style="{IndentWidth: 4}"']
+\}
+let g:neoformat_enabled_cpp = ['clangformat']
+let g:neoformat_enabled_c = ['clangformat']
