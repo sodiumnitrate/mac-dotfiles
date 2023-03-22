@@ -22,6 +22,8 @@ export PATH=$PATH:$ATSAS/bin
 
 export PATH=$PATH:/usr/local/
 
+export PATH=$PATH:/Users/iremaltan/clustalo/bin/
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/iremaltan/.dotfiles/zsh/.oh-my-zsh"
 

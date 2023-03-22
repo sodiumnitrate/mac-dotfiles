@@ -1,8 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'davidhalter/jedi-vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
+"Plug 'davidhalter/jedi-vim'
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
@@ -15,7 +15,7 @@ Plug 'deoplete-plugins/deoplete-clang'
 
 call plug#end()
 
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 0
 let g:airline_theme='onedark'
 "let g:neomake_python_enabled_makers = ['pylint']
 
