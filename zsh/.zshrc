@@ -15,6 +15,9 @@ alias grace="ssh ia253@grace.hpc.yale.edu"
 
 alias vi="nvim"
 
+alias g_cp="/usr/local/Cellar/coreutils/9.2/bin/gcp"
+alias blender="/Applications/Blender.app/Contents/MacOS/Blender"
+
 ### BEGIN ATSAS Installer ###
 export ATSAS=/Users/iremaltan/ATSAS-3.0.4-2
 export PATH=$PATH:$ATSAS/bin
