@@ -1,5 +1,6 @@
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 
 # to get rid of the compdef command not found error
@@ -26,6 +27,8 @@ export PATH=$PATH:$ATSAS/bin
 export PATH=$PATH:/usr/local/
 
 export PATH=$PATH:/Users/iremaltan/clustalo/bin/
+
+export PATH=$PATH:/Users/iremaltan/samtools/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/iremaltan/.dotfiles/zsh/.oh-my-zsh"
